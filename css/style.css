@@ -1,7 +1,13 @@
 body {
 	background: black ;
 	color: white ;
-	font-size: 5em ;
+	font-size: 2em ;
 	padding: 3em 5em,
 
+}
+div {
+	background: white ;
+	color: black ;
+	font-size: 3.5em ;
+	padding: 3em 5em,
 }
