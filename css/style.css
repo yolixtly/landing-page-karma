@@ -1,3 +1,11 @@
+/*I still do not understand what is the benefit. I see that when boxing is applied,the .content moves within the 
+height of the content, otherwise when toggling the padding of the .links the borders will go beyond*/
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
 
 body {
 /*Typography Criteria*/
