@@ -1,29 +1,35 @@
-/*I still do not understand what is the benefit. I see that when boxing is applied,the .content moves within the 
-height of the content, otherwise when toggling the padding of the .links the borders will go beyond*/
+
 html {
+	/*I still do not understand what is the benefit. I see that when boxing is applied,the .content moves within the 
+	height of the content, otherwise when toggling the padding of the .links the borders will go beyond...
+
+	Course explanation: The border-box is useful to have on many elements as it can force margin and padding
+	to cut into the width and height of an area rather than expanding it.*/
   box-sizing: border-box;
+  /*webkit font will help the pixeled fonts look smoother and nicer. that is what i understand*/
+  -webkit-font-smoothing: antialiased;
 }
 *, *:before, *:after {
   box-sizing: inherit;
 }
 
 body {
-/*Typography Criteria*/
+/*Typography Criteria for the entire page, that is why it is placed in 'Body tag'*/
 	font-family: 'Roboto', sans-serif;
-	font-size: 16px;
+	font-size: 100%;
 	color: #838994;
 	letter-spacing: 0.03em;
 }
 
 /*Navegation section*/
+
 .top-navegation {
 	position: fixed;
 	width: 100%;
-	/*debuging style*/
-	background-color: aliceblue ;
-	border-bottom: .2rem solid #ddd ;
+	border-bottom: .09rem solid #ddd ;
 	/*animation width -->I have not figure it out yet!??*/
 }
+/*REVIEW FOR FURTHER SECTION, .CONTENT MAY APPLY FOR THE ENTIRE PAGE*/
 .top-navegation .content {
 	width: 60% ;
 	height: 4.5rem ;
@@ -39,9 +45,18 @@ body {
 	text-align: center;
 	float: right;
 	margin-top: 1.7rem;
-
 }
 .top-navegation .links li {
 	display: inline-block;
 	margin-left: 1.56rem ;
+	
+}
+.top-navegation .links li:hover {
+	cursor: pointer;
+	color: #333333;
+	
+}
+.top-navegation .links> .active {
+	color: #4c5058 ;
+	font-weight: 500 ;
 }
