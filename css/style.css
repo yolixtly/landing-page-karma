@@ -17,12 +17,12 @@ body {
 	font-size: 100%;
 	color: #838994;
 	letter-spacing: 0.03em;
-/*Debuging criteria*/
-	background-color: gray ;
+
 }
-/*debuging criteria*/
+/*IF I REMOVE DIV THE NAVEGATION BAR GOES TO THE MIDDLE OF THE PAGE*/
 div {
-	border: .1rem solid chocolate;
+	border: .1rem solid #fff;
+	display: block;
 }
 /*Navegation section*/
 
@@ -31,10 +31,11 @@ div {
 	width: 100%;
 	border-bottom: .09em solid #ddd ;
 	background-color: #fff;
+	z-index: 9999;
 	/*animation width -->I have not figure it out yet!??*/
 }
-/*REVIEW FOR FURTHER SECTION, .CONTENT MAY APPLY FOR THE ENTIRE PAGE*/
-.top-navegation .content {
+/*.CONTENT APPLIES FOR all the sections PAGE*/
+.content {
 	width: 60% ;
 	height: 4.5rem ;
 	margin: 0 auto;
@@ -74,12 +75,7 @@ div {
 	background-size: cover ;
 	height: 37rem;
 }
-.introduction .content {
-	width: 60% ;
-	height: 4.5rem ;
-	margin: 0 auto;
-	padding: 0 1rem;
-}
+
 .introduction h1 {
 	margin-top: 17rem ;
 	font-size: 3rem ;
@@ -110,3 +106,32 @@ div {
 .introduction button:hover {
 	background-color: #f15a84;
 }
+
+/*CASES SECTION*/
+
+.cases .devices > li {
+	width: 33.33%;
+	display: inline-block;
+	float: left;
+}
+.cases .content {
+	margin-top: 8rem;
+	text-align: center ;
+	color: black;
+}
+.cases .content h2 {
+	font-size: 2.75rem ;
+	margin: 1.6rem 0 3.2rem; 
+	font-weight: 300 ;
+}
+.cases .devices h3 {
+    font-weight: 400;
+    font-size: 1.563rem;
+    margin: 2.5rem 0px 1.875rem;
+    border: .2rem solid white;
+ }
+.cases .caption {
+	margin: 1rem 1rem;
+}
+
+/*footer section*/
