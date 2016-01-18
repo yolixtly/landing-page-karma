@@ -136,7 +136,7 @@ div {
 /*FOOTER SECTION*/
 .social {
     background-color: #fff;
-    overflow: auto;
+    overflow: 5rem ;
     padding-bottom: 5rem;
     text-align: center;
     color: black;
